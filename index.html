@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" class="dark scroll-smooth scroll-pt-12">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Srcbook</title>
+    <script type="text/javascript">
+      (function (theme) {
+        if (theme === null) {
+          return;
+        }
+
+        const html = document.querySelector('html');
+
+        if (theme === 'light') {
+          html.classList.remove('dark');
+          html.classList.add('light');
+        }
+      })(localStorage.getItem('sb:theme'));
+    </script>
+    <script type="text/javascript">
+      globalThis.SRCBOOK_CONFIG = {
+        api: {
+          host: window.location.host,
+          origin: window.location.origin,
+        },
+      };
+    </script>
+    <script type="module" crossorigin src="/assets/index-glkDcwHQ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BSAm9jnw.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
